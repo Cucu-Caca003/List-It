@@ -9,6 +9,8 @@ class TaskController{
     }
 
 /*take reference 🥲*/
+
+
     public function index(){
     $result=$this->db->query('SELECT * FROM tasks');
     $tasks=[];
@@ -20,6 +22,7 @@ class TaskController{
 
 
 /*take reference 🥲*/
+
 public function add(){
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['task']) && !empty($_POST['task'])){
         $stmt=$this->db->prepare('INSERT INTO tasks (description, completed) VALUES (:description, :completed)');

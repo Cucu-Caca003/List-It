@@ -6,7 +6,6 @@
 </form>
 
 
-/*take reference 🥲*/
 <ul>
     <?php foreach ($tasks as $task): ?>
         <li>
